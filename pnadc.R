@@ -8,7 +8,7 @@ dir.create("C:/ufpel/analises", showWarnings = FALSE, recursive = TRUE)
 for(i in 2022:2024){
   if(i < 2024){
     for(j in 1:4){
-      dados_PNADc <- get_pnadc(year = i, quarter = j, vars = c("VD4002", "VD4014", "V2007"),
+      dados_PNADc <- get_pnadc(year = i, quarter = j, vars = c("VD4001", "VD4002", "V2007"),
                                design = FALSE, labels = FALSE)
       
       # Filtrando dados iguais a zero e nulos 
